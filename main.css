@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: cornflowerblue;
+}
+image {
+    display: block;
+}
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-form {
+    margin: 100px 10px;
+    display: flex;
+    justify-content: center;
+}
+.header-input {
+    width: 80%;
+    margin-right: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+}
+.header-button {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgb(53, 111, 129);
+}
+.books-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.book-item {
+    width: 400px;
+    margin: 10px;
+    padding: 10px 14px;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+.book-item:hover {
+    background-color: rgb(201, 228, 255);
+    border-color: rgb(53, 111, 129);
+}
+.book-img {
+    width: 350px;
+    height: 350px;
+    margin: 30px 10px;
+}
+.book-name {
+    font-weight: 800;
+    margin: 0;
+    color: rgb(56, 56, 212);
+}
+
+.book-year {
+    position: relative;
+    margin-left: 20px;
+    color: rgb(66, 63, 63);
+}
+.book-year::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -20px;
+    background-image: url(./images/calendar.png); 
+    background-position: center;
+    background-size: 17px;
+}
+.book-page {
+    position: relative;
+    margin: 0 20%;
+    color: rgb(66, 63, 63);
+}
+.book-page::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -23px;
+    background-image: url(./images/book-page.png); 
+    background-position: center;
+    background-size: 20px;
+}
+.book-lang{
+    position: relative;
+    color: rgb(66, 63, 63);
+}
+.book-lang::before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: -20px;
+    background-image: url(./images/earth.png); 
+    background-position: center;
+    background-size: 17px;
+}
+.book-link {
+    display: block;
+    margin-top: 40px;
+}
